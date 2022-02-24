@@ -40,6 +40,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="82dp"
         android:backgroundTint="#AAAAAE"
+        android:onClick="addXandY"
         android:text="SUMA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
