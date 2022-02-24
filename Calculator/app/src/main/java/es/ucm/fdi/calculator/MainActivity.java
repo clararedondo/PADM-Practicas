@@ -21,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addXandY(){
-
+        try {
+            result = calculator.add((double) editTextX.getText(), (double) editTextY.getText());
+        }
+        catch {
+            //Add new activity to show error
+        }
+        Intent intent = new Intent(this, CalculatorResultActivity.class);
+        intent.putExtra("result", result);
+        startActivity(intent);
     }
 }

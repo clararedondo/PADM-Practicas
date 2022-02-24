@@ -9,5 +9,7 @@ public class CalculatorResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator_result);
+        Intent intent = getIntent();
+        double result = intent.getDoubleExtra("result", 0.0);
     }
 }
